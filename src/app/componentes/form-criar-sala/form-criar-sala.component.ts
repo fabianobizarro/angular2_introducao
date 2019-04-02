@@ -33,7 +33,7 @@ export class FormCriarSalaComponent implements OnInit {
         nome: form.nome,
         capacidade: form.capacidade,
         possuiProjetor: form.possuiProjetor,
-        possuiTv: form.possuiTv
+        possuiTV: form.possuiTv
       }
 
       this.service.adicionarSala(sala)

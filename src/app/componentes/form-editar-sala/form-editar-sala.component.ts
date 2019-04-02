@@ -39,7 +39,7 @@ export class FormEditarSalaComponent implements OnInit {
         nome: new FormControl(sala.nome, [Validators.required]),
         capacidade: new FormControl(sala.capacidade, [Validators.required]),
         possuiProjetor: new FormControl(sala.possuiProjetor),
-        possuiTv: new FormControl(sala.possuiTv)
+        possuiTv: new FormControl(sala.possuiTV)
       });
     }
     else {
@@ -56,7 +56,7 @@ export class FormEditarSalaComponent implements OnInit {
         nome: form.nome,
         capacidade: form.capacidade,
         possuiProjetor: form.possuiProjetor || false,
-        possuiTv: form.possuiTv || false
+        possuiTV: form.possuiTv || false
       }
 
       this.service.editarSala(this.salaId, sala)
