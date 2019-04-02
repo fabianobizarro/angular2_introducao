@@ -1,0 +1,26 @@
+.menu-lateral{
+    height: calc(100vh - 59px);
+    background-color: #c5dec9;    
+}
+
+@media (max-width: 768px)
+{
+    .menu-lateral{
+        height: auto;    
+    }
+}
+
+.menu-lateral a{
+    color: #333;
+    font-weight: 500;
+}
+
+.menu-lateral .flex-column a:hover{
+    background-color: #a4ccab;
+    color:#333;
+}
+
+.menu-lateral .flex-column .nav-link.active {
+    background-color: #a4ccab;
+    color: #fff;
+}

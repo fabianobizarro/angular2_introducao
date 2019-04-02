@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+/* conteudo */
+.conteudo{
+    margin: 20px;
+}
+
+.conteudo .btn-novo{
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+/* btn */
+.btn-warning{
+    color : #fff !important;
+}
