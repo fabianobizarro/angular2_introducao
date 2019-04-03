@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiEndpoint: 'http://homologacao.sistematodos.com.br/treinamento'
+  apiEndpoint: ''
 };
 
 /*

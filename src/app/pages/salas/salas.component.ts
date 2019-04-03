@@ -10,6 +10,7 @@ import { Sala } from 'src/app/models/sala';
 export class SalasComponent implements OnInit {
 
   listaSalas: Sala[] = [];
+  loading: boolean = true;
 
   constructor(private service: SalaService) { }
 
@@ -18,10 +19,15 @@ export class SalasComponent implements OnInit {
   }
 
   carregarSalas() {
+    this.loading = true;
     this.service.obterSalas()
       .subscribe(res => {
         this.listaSalas = res;
-      });
+      }, err => {
+        alert('Ocorreu um erro ao carregas as salas');
+        console.log(err);
+      })
+      .add(() => this.loading = false);
   }
 
   excluirSala(id: number) {

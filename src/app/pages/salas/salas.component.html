@@ -8,12 +8,15 @@
 <hr />
 
 <p>
-  <a href="/salas/novo" class="btn btn-success">
+  <a routerLink="/salas/novo" class="btn btn-success">
     Nova Sala
   </a>
 </p>
 
-<div class="row">
+
+<app-loading [show]="loading"></app-loading>
+
+<div class="row" *ngIf="!loading" >
   <div class="col">
 
     <table class="table">
@@ -49,3 +52,4 @@
 
   </div>
 </div>
+
