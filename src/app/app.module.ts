@@ -6,7 +6,6 @@ import { AppRouteModule } from './app-route.module';
 
 
 import { AppComponent } from './app.component';
-import { MeuComponenteComponent } from './componentes/meu-componente/meu-componente.component';
 import { TopBarComponent } from './componentes/top-bar/top-bar.component';
 import { MenuComponent } from './componentes/menu/menu.component';
 import { SalasComponent } from './pages/salas/salas.component';
@@ -18,7 +17,6 @@ import { LoadingComponent } from './componentes/loading/loading.component';
 @NgModule({
   declarations: [
     AppComponent,
-    MeuComponenteComponent,
     TopBarComponent,
     MenuComponent,
     SalasComponent,
